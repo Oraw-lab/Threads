@@ -1,0 +1,86 @@
+# Ignore everything
+*
+
+# Do not ignore directories (required to track nested files)
+!*/
+
+# Track .cpp files
+!*.cpp
+
+# Track .h files
+!*.h
+
+# Ignore build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+*.lo
+*.la
+*.gch
+
+# Ignore generated files
+*.d
+*.s
+*.mod
+
+# Ignore logs and debugging files
+*.log
+*.pid
+*.stackdump
+*.core
+
+# Ignore temporary or backup files
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+*~
+
+# Ignore compiled static libraries
+*.a
+
+# Ignore compiled dynamic libraries
+*.so
+*.dll
+*.dylib
+
+# Ignore binaries
+*.exe
+*.out
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# Ignore CMake build directories
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore other build system files
+build/
+Debug/
+Release/
+
+# Ignore package managers or external libraries
+*.vcxproj
+*.vcxproj.filters
+*.xcworkspace
+*.xcodeproj
+
+# Ignore user-specific files from IDEs
+*.user
+*.userprefs
+*.project
+*.cproject
