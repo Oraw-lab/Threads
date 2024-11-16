@@ -2,15 +2,21 @@
 #include "TaskScheduler.h"
 
 int main() {
-    TaskScheduler scheduler;
+    TaskScheduler scheduler(4);
 
     // Submit some tasks
-    scheduler.submitTask([] { std::cout << "Task 1 is running\n"; });
-    scheduler.submitTask([] { std::cout << "Task 2 is running\n"; });
-    scheduler.submitTask([] { std::cout << "Task 3 is running\n"; });
+    for (int i = 0; i < 10; ++i) {
+        scheduler.submitTask([i]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::cout << "Task " << i << " executed by thread "
+                << std::this_thread::get_id() << "\n";
+            });
+    }
 
-    // Gracefully shutdown after all tasks are complete
-    scheduler.shutdown();
+    // Give the scheduler some time to process tasks
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+
+    scheduler.shutdown(); // Clean shutdown
 
     return 0;
 }

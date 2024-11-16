@@ -28,8 +28,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\or\\source\\repos\\Practice\\Practice\\Main.cpp",
+              "RelativeDocumentMoniker": "Practice\\Main.cpp",
+              "ToolTip": "C:\\Users\\or\\source\\repos\\Practice\\Practice\\Main.cpp",
+              "RelativeToolTip": "Practice\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-16T18:48:44.744Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -79,19 +92,6 @@
               "ViewState": "AgIAAKEDAAAAAAAAAADgv7MDAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-30T12:22:06.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\or\\source\\repos\\Practice\\Practice\\Main.cpp",
-              "RelativeDocumentMoniker": "Practice\\Main.cpp",
-              "ToolTip": "C:\\Users\\or\\source\\repos\\Practice\\Practice\\Main.cpp",
-              "RelativeToolTip": "Practice\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-29T16:25:32.742Z",
-              "EditorCaption": ""
             }
           ]
         }

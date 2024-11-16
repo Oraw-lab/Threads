@@ -8,14 +8,14 @@
 
 class TaskScheduler {
     std::queue<std::function<void()>> tasksToHandle;
-    std::thread workerThread;
+    std::vector<std::thread> workerThreads;
     std::mutex tasksLocker;
     std::condition_variable cv;
     bool acceptingTasks = true;
     bool shutdownRequested = false;
 
 public:
-    TaskScheduler();                     // Initializes the scheduler and starts the worker thread.
+    TaskScheduler(size_t numWorkers);                     // Initializes the scheduler and starts the worker thread.
     ~TaskScheduler();                    // Ensures all tasks are completed and resources are cleaned up.
     void submitTask(std::function<void()> task); // Adds a task to the queue for asynchronous execution.
     void shutdown();                     // Stops accepting new tasks and shuts down gracefully.
